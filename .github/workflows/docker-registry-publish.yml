@@ -29,5 +29,5 @@ jobs:
       - name: Build Docker image
         run: docker build . -t ghcr.io/jackdsiemers/m346-ref-card-03-ci-cd-2:${{ github.sha }}
 
-      - name: Push Docker image to GitHub Container Registry(Didn't perform in last step)
+      - name: Push Docker image to GitHub Container Registry
         run: docker push ghcr.io/jackdsiemers/m346-ref-card-03-ci-cd-2:${{ github.sha }}
