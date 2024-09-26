@@ -32,7 +32,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/m346-ref-card-03-CI-CD-2:latest
+          tags: ghcr.io/${{ github.repository_owner }}/m346-ref-card-03-ci-cd-2:latest
 
       - name: Image digest
         run: echo ${{ steps.docker.outputs.digest }}
