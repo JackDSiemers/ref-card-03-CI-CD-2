@@ -1,48 +1,19 @@
 
-# Architecture Ref.Card 02 - React Application (serverless)
+### Ref Card 03 CI-CD
 
-Link zur Übersicht<br/>
-https://gitlab.com/bbwrl/m346-ref-card-overview
+Schritte - Workflow Dockerhub
 
-## Installation der benötigten Werkzeuge
+1. Projekt pullen und remote source auf eigenes repo wechslen.
+2. Dockerfile erstellen, mit einfachen copy & build process.
+3. Docker-publish.yml file erstellen und korrekt initialisieren.
+4. Secrets auf Github erstellen.
+5. Pushen und warten auf die Pipeline.
+![image](/resources/Screenshot%202024-09-26%20at%2007.51.04.png)
 
-Für das Bauen der App wird Node bzw. npm benötigt. Die Tools sind unter 
-der folgenden URL zu finden. Für die meisten Benutzer:innen empfiehlt sich 
-die LTS Version.<br/>
-https://nodejs.org/en/download/
-
-Node Version Manager<br/>
-Für erfahren Benutzer:innen empfiehlt sich die Installation des 
-Node Version Manager nvm. Dieses Tool erlaubt das Installiert und das 
-Wechseln der Node Version über die Kommandozeile.<br/>
-**Achtung: Node darf noch nicht auf dem Computer installiert sein.**<br/>
-https://learn2torials.com/a/how-to-install-nvm
-
-
-## Inbetriebnahme auf eigenem Computer
-
-Projekt herunterladen<br/>
-```git clone git@gitlab.com:bbwrl/m346-ref-card-02.git```
-<br/>
-```cd architecture-refcard-02```
-
-### Projekt bauen und starten
-Die Ausführung der Befehle erfolgt im Projektordner
-
-Builden mit Node/npm<br/>
-```$ npm install```
-
-Das Projekt wird gebaut und die entsprechenden Dateien unter dem Ordner node_modules gespeichert.
-
-Die App kann nun mit folgendem Befehl gestartet werden<br/>
-```$ npm start```
-
-Die App kann nun im Browser unter der URL http://localhost:3000 betrachtet werden.
-
-
-
-### Inbetriebnahme mit Docker Container
-folgt...
+Schritte - Github Container Registry.
+1. gleiches Dockerfile, Docker-registry-publish erstellt und korrekt definiert.
+2. Neuer Github Token erstellen und in Secrets speichern.
+3. Pushen und warten auf Pipeline.
 
 
 
