@@ -35,4 +35,4 @@ jobs:
           tags: ghcr.io/jackdsiemers/m346-ref-card-03-ci-cd-2:latest
 
       - name: Push Docker image to GitHub Container Registry(Didn't perform in last step)
-        run: docker push ghcr.io/${{ github.actor }}/react-app:${{ github.sha }}
+        run: docker push ghcr.io/jackdsiemers/react-app:${{ github.sha }}
