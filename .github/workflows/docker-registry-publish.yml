@@ -33,6 +33,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/m346-ref-card-03-ci-cd-2:latest
+            - run: |
+            echo "${{ steps.string.outputs.lowercase }}"
 
       - name: Image digest
         run: echo ${{ steps.docker.outputs.digest }}
