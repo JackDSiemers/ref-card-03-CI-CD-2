@@ -56,3 +56,6 @@ jobs:
           aws configure set region $AWS_DEFAULT_REGION
 
 
+      - name: Update ECS service
+        run: |
+          aws ecs update-service --cluster ref-card-03 --service ref-card-03-service  --task-definition ref-card-03-service

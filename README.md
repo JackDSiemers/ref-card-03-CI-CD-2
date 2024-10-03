@@ -23,4 +23,7 @@ Schritte - AWS
 ![image](/resources/Screenshot%202024-10-03%20at%2009.32.38.png)
 3. YML file erstellen und die Secrets verwenden.
 4. Dannach Pushen und auf Github actions bestätigen.
-5. ECS Cluster erstellen mit Service
+5. ECS Cluster erstellen, dann Task definition und zuletzt den Service.
+![image](/resources/Screenshot%202024-10-03%20at%2010.36.02.png)
+![image](/resources/Screenshot%202024-10-03%20at%2010.34.54.png)
+![image](/resources/Screenshot%202024-10-03%20at%2010.36.02.png)
