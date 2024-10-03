@@ -30,7 +30,7 @@ jobs:
           aws ecr get-login-password --region ${{ secrets.AWS_DEFAULT_REGION }} | docker login --username AWS --password-stdin ${{ secrets.ECR_REPOSITORY }}
 
       - name: Build Docker image
-        run: docker build -t my-react-app.
+        run: docker build -t my-react-app .
 
       - name: Tag Docker image
         run: docker tag ${{ secrets.ECR_REPOSITORY_NAME }}:latest ${{ secrets.ECR_REPOSITORY }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
