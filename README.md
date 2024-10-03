@@ -28,3 +28,4 @@ Schritte - AWS
 ![image](/resources/Screenshot%202024-10-03%20at%2010.34.54.png)
 ![image](/resources/Screenshot%202024-10-03%20at%2010.36.02.png)
 6. Update ECS service einfügen, pushen und finito pepito!
+![image](/resources/Screenshot%202024-10-03%20at%2010.40.04.png)
